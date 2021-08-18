@@ -1,5 +1,5 @@
 function processQuery(query) {
-    urlQuery = encodeURIComponent(query.replace(/[~`!@#$%^&*()+={}\[\];:\'\"<>.,\/\\\?-_]/g, ''));
+    urlQuery = encodeURIComponent(query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, ''));
     return String(urlQuery);
 }
 
