@@ -1,0 +1,141 @@
+html, body {
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(to bottom right, #7054f4 45%, #fcbcc4); */
+    background: linear-gradient(to bottom, #7054f4, #fcbcc4);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+
+a { 
+    text-decoration: none; 
+    transition: all 0.25s;
+    color: inherit;
+}
+a:hover { text-decoration: none; 
+    color: white;
+}
+
+.maincontainer {
+    display: flex;
+    height: 100vh;
+}
+
+.container, .loadersss{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+    justify-content: center;
+    align-items: center;
+}
+
+.name1, .name2 {
+    width: 90%;
+    height: 40px;
+    border-radius: 3px;
+    display: flex;
+    align-content: left;
+    justify-items: center;
+    margin-bottom: 5vh;
+    background: white;
+}
+
+input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 1em;
+    /* text-align: center; */
+    margin-left: 10px;
+    color: black;
+}
+
+input::placeholder {
+    color: rgb(140, 140, 140);
+}
+
+.love-check-button{
+    width: 100px;
+    height: 40px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px; 
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.25s;
+}
+
+.love-check-button:hover {
+    background: rgba(0, 0, 0, 0.3);    
+}
+
+button {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.header {
+    position: fixed;
+    color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: Lucida Handwriting;
+    font-size: larger;
+    /* height: 60px; */
+    /* background: rgba(0, 0, 0, 0.26); */
+}
+
+.title {    
+    margin: 10px 0px 10px 25px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;  
+    width: 96%; 
+    /* background: rgba(0, 0, 0, 0.26); */
+    text-align: right;
+    margin-bottom: 2px;
+    margin-right: 2%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+
+.loader {
+    width: 50px;
+    height: 50px;
+    margin: 100px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;  
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+  
+@keyframes sk-scaleout {
+    0% { -webkit-transform: scale(0) }
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+
+.wrong {
+    min-height: 20px;
+    font-size: small;
+    color: brown;
+}
