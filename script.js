@@ -6,7 +6,7 @@ function processQuery(query) {
 function Calculatewithloader(name1, name2) {
 	document.getElementById('container').innerHTML = `
             <div class="loadersss" id="loadersss">
-            <div class="loader"></div>
+            	<div class="loader"></div>
             </div>
             `;
 	var url = 'https://atrs-webapis.herokuapp.com/API/calculate_love/' + processQuery(name1) + '/' + processQuery(name2)
