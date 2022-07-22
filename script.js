@@ -4,7 +4,7 @@ function calculateWithLoader(name1, name2) {
 		<div class="loader"></div>
 		</div>
 		`;
-    let url = "https://atrs7391.herokuapp.com/api/v2/love_calculator?api_key=love_calculator&name1=" + encodeURIComponent(name1) + "&name2=" + encodeURIComponent(name2);
+    let url = "https://atrs7391.up.railway.app/api/v2/love_calculator?api_key=love_calculator&name1=" + encodeURIComponent(name1) + "&name2=" + encodeURIComponent(name2);
     // I'm using my API because I am really bad at JavaScript, so I am taking the help of Backend (Python).
     fetch(url)
         .then(response => {
